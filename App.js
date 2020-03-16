@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Axios from 'axios';
+import Article from './components/Article';
 
 const query = `
 query MyQuery {
@@ -53,7 +54,8 @@ export default class App extends Component {
     return (
       <View>
         {data.allArticles.map( (article, index) =>
-          <Text key={index}>{article.title}</Text>
+        <Article  key={index}{...article}></Article> 
+         
         )}
       </View>
     );
