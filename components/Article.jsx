@@ -2,13 +2,13 @@ import React from 'react';
 import { View,Text } from 'react-native';
 
 
-const Article = ({article}) =>{
+const Article = ({content,title}) =>{
 
 return(
   <View>
    <Text>Tedfds</Text>
    
-    <Text>{article.content}</Text>
+    <Text>{content}</Text>
   </View>)}
 
 
